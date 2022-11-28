@@ -67,14 +67,14 @@ class ClientController extends Controller
      * @param  \App\Models\client  $client
      * @return \Illuminate\Http\Response
      */
-    public function show(client $client)
+    public function show($id)
     {
-        $clients=Client::find($client)->first();
-        $equipement=Equipement::where('client_id',$client)->get();
+        $clients=Client::find($id)->first();
+        $equipement=Equipement::where('client_id',$id)->get();
         // $equipement=Equipement::all();
-        // dd($equipement);
+        // dd($id);
         return view('dimensionnement.index',[
-            'clients'=>$clients,
+            'clients'=>$id,
             'equipement'=>$equipement
         ]);
     }

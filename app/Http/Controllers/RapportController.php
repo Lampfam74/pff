@@ -4,9 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\{client,Equipement};
-use Illuminate\Support\Facades\Auth;
-class dashboardController extends Controller
+// use App\helpers\AppHelpers;
+class RapportController extends Controller
 {
+  
     /**
      * Display a listing of the resource.
      *
@@ -14,11 +15,7 @@ class dashboardController extends Controller
      */
     public function index()
     {
-        $coutClient=Client::where('user_id',Auth::user()->id)->count();
-        
-        return view('accueil.accueil',[
-            'coutClient'=>$coutClient
-        ]);
+        return view('rapport.index');
     }
 
     /**
@@ -50,7 +47,31 @@ class dashboardController extends Controller
      */
     public function show($id)
     {
-        //
+        $client=Client::find($id);
+        $rapport=Equipement::where('client_id',$id)->get();
+        // dd($rapport);
+        // PT
+        $puissance=\App\helpers\AppHelpers::Puissance_de_pointe($rapport);
+        // dd($puissance);
+        // ET
+        $energies=\App\helpers\AppHelpers::Energie_consomme($rapport);
+        
+        $Puissance_onduleur=\App\helpers\AppHelpers::Puissance_onduleur($puissance);
+
+        $Puissance_max_requise=\App\helpers\AppHelpers::Puissance_max_requise($puissance);
+
+        $Puissance_PV_installee=\App\helpers\AppHelpers::Puissance_PV_installee($energies);
+        $Capacite_batterie=\App\helpers\AppHelpers::Capacite_batterie($energies);
+        $Nombre_batteries=\App\helpers\AppHelpers::Nombre_batteries($Capacite_batterie);
+        // dd($Nombre_batteries);
+        return view('rapport.index',[
+            'client'=>$client,
+            'rapport'=>$rapport,
+            'Puissance_onduleur'=>$Puissance_onduleur,
+            'Puissance_PV_installee'=>$Puissance_PV_installee,
+            'Nombre_batteries'=>$Nombre_batteries
+        ]);
+
     }
 
     /**
@@ -86,4 +107,5 @@ class dashboardController extends Controller
     {
         //
     }
+    
 }

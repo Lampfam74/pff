@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{dashboardController,
     ClientController,
-    EquipementController};
+    EquipementController,
+    RapportController};
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,6 +27,10 @@ Route::prefix('user')->middleware(['auth'])->group(function () {
     Route::resource('/dashboard', dashboardController::class);
     Route::resource('/clients', ClientController::class);
     Route::resource('/equipement', EquipementController::class);
+    Route::resource('rapport', RapportController::class);
+    
+    // Route::get('rapport/{id}', [calculeController::class,'show'])->name('rapport.show');
+    // Route::get('rapport', [calculeController::class, 'index'])->name('rapport.index');
 });
 
 require __DIR__.'/auth.php';

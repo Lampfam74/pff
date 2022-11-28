@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html xmlns:th="http://www.thymeleaf.org">
+<html >
 
 <head >
 <link href="img/favicon.ico" rel="icon">
@@ -24,7 +24,11 @@
 		<script src="./js/jquery.min.js"></script>
 		 <script src="/js/bootstrap.min.js"></script><!-- Bootstrap framework -->
 </head>
-
+<style>
+	a{
+		color: black;	
+	}
+</style>
 <body>
 	<!-- Carousel wrapper -->
 	<div id="carouselMaterialStyle" class="carousel slide carousel-fade" data-mdb-ride="carousel">
@@ -236,7 +240,7 @@
 </div>
 	<div>
     <footer class="text-center text-black container-fluid "
-			style="background:#d4faf9" id="contacts">
+			style="background:#e4c86d" id="contacts">
 
 			<div class="container">
 				<br />
@@ -295,7 +299,7 @@
 								<p></p>
 								<br>
 								<p>
-									Distributed by: <a href="#">LAMPDEVS</a>
+									Distributed by: <a href="#">DEV $Riffo</a>
 								</p>
 							</div>
 							<div>

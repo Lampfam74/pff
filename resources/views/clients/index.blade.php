@@ -33,8 +33,8 @@
                     <td> {{$per->prenom}} </td>
                     <td> {{$per->email}}</td>
                     <td>{{$per->telephone}}</td>
-                <td><a href="{{route('clients.show',$per->id)}}" class="btn btn-outline-primary">dimennsionnement</a>&nbsp;&nbsp;&nbsp;
-					<a  href="#" class="btn btn-outline-primary">Rapport</a>
+                <td><a href="{{route('clients.show',$per->id)}}" class="btn btn-outline-success">dimennsionnement</a>&nbsp;&nbsp;&nbsp;
+				<a  href="{{route('rapport.show',$per->id)}}" class="btn btn-outline-primary">Rapport</a>
 					</td>
 					
                 </tr>

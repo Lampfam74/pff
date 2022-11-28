@@ -40,13 +40,16 @@ class EquipementController extends Controller
             'heureUtilisation' => ['required', 'string','max:255'],
             'puissance' => ['required', 'string', 'max:255'],
             'nombre' => ['required'],
+            'type' => ['required'],
             'client_id'=> 'required',
         ]);
+        
         Equipement::create([
             'libelle'=>$request['libelle'],
             'heureUtilisation'=>$request['heureUtilisation'],
             'puissance'=>$request['puissance'],
             'nombre'=>$request['nombre'],
+            'type' => $request['type'],
             'client_id'=>$request['client_id'],
 
         ]);

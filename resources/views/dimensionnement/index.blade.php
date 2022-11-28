@@ -13,6 +13,7 @@
 				<tr>
 					<th scope="col">nom Equipement</th>
 					<th scope="col">Nombre d'equipement</th>
+					<th scope="col">Type de Systeme</th>
  				<th scope="col"> puissance</th>
 					<th scope="col">Nombre d'heure dimensionnement</th>
 					
@@ -24,11 +25,12 @@
 				<tr >
 					<td>{{$per->libelle}}</td>
                     <td> {{$per->nombre}} </td>
+					<td> {{$per->type}} </td>
                     <td> {{$per->puissance}}</td>
                     <td>{{$per->heureUtilisation}}</td>
-                <td><a href="{{route('equipement.show',$per->id)}}" class="btn btn-outline-primary">editer</a>&nbsp;&nbsp;&nbsp;
+                {{-- <td><a href="{{route('equipement.show',$per->id)}}" class="btn btn-outline-primary">editer</a>&nbsp;&nbsp;&nbsp; --}}
 				
-					</td>
+					{{-- </td> --}}
 					
                 </tr>
                 @endforeach
@@ -85,7 +87,7 @@
                         <!-- 2 column grid layout with text inputs for the first and last names -->
                         @csrf
 						<div class="row mb-4">
-                        <input type="hidden" id="client_id" name="client_id"  value="{{$clients->id}}"  class="form-control" />
+                        <input type="hidden" id="client_id" name="client_id"  value="{{$clients}}"  class="form-control" />
 							<div class="col">
 								<!-- Text input -->
 								<div class="form-outline mb-4">
@@ -99,7 +101,12 @@
 									<input type="number" id="form6Example5"   class="form-control" name="nombre" />
 									<label class="form-label" for="form6Example5">nombre d'equipement</label>
 								</div>
-
+								<select class="form-select" aria-label="Default select example" name="type">
+									<option selected>Type de systeme</option>
+									<option value="Hybride">Hybride</option>
+									<option value="Isolee">Isolee</option>
+								  </select>
+								  <br>
 								<!-- Number input -->
 								<div class="form-outline mb-4">
 									<input type="text" id="form6Example6"   class="form-control" name="libelle" />

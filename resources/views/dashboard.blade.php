@@ -15,6 +15,23 @@
     <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
     <link rel="stylesheet" href="https:/cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"  href="{{ asset('/css/jquery.dataTables.min.css')}}">
+   
+    <style>
+        .invoice-title h2, .invoice-title h3 {
+            display: inline-block;
+        }
+        
+        .table>tbody>tr>.no-line {
+            border-top: none;
+        }
+        
+        .table>thead>tr>.no-line {
+            border-bottom: none;
+        }
+        /* .table > tbody > tr > .thick-line {
+            border-top: 2px solid;
+        } */
+        </style>
     <script type="text/javascript"  src="{{ asset('/js/mdb.min.js')}}"></script>
     <script type="text/javascript"  src="{{ asset('/js/jquery.min.js')}}"></script>
     <script type="text/javascript"  src="{{ asset('/js/jquery.dataTables.min.js')}}"></script>
@@ -43,19 +60,18 @@
     <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <!-- Navbar brand -->
-      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+    <a class="navbar-brand mt-2 mt-lg-0" href="{{route('dashboard.index')}}">
         <img
           src="/img/1.png"
           style="
           height:70px;
-          width:auto;
          "
         />
       </a>
       <!-- Left links -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="outline:none">
         <li class="nav-item" style="color: none">
-          <a class="nav-link" style="color: black" href="#">Accueil</a>
+          <a class="nav-link" style="color: black" href="{{route('dashboard.index')}}">Accueil</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" style="color: black" href="{{route('clients.index')}}">Clients</a>

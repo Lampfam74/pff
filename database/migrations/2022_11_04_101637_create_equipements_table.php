@@ -17,6 +17,7 @@ class CreateEquipementsTable extends Migration
             $table->id();
             $table->string('libelle');
             $table->integer('heureUtilisation');
+            $table->string('type');
             $table->integer('puissance');
             $table->integer('nombre');
             $table->string('client_id');
