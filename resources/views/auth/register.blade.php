@@ -89,7 +89,6 @@
 						<label class="control-label" for="password"> confirmation </label>
 						<input type="password" class="form-control" name="password_confirmation" placeholder="confirmation Mot de passe">
 					  </div>
-
 					<div class="form-group">
 						<button type="submit" class="btn btn-success">Register</button>
 						<span>Already registered? <a href="login">Login

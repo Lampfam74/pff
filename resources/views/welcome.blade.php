@@ -103,141 +103,139 @@
 		<div class=" p-5 mb-4 rounded-3" style="background:rgb(240,191,63)" >
       <div class="container-fluid py-5" style="color:black">
         <h1 class="display-5 fw-bold ">Energie Solaire</h1>
-        <p class="col-md-8 fs-4">L'énergie solaire est à l'origine du cycle de l'eau, du vent et de la photosynthèse réalisée par le règne végétal, dont dépend le règne animal via les chaînes alimentaires. Le Soleil est à l'origine de la plupart des énergies sur Terre, à l'exception de l'énergie nucléaire et de la géothermie profondea.</p>
+        <p class="col-md-12 fs-4">L'énergie solaire est à l'origine du cycle de l'eau, du vent et de la photosynthèse réalisée par le règne végétal, dont dépend le règne animal via les chaînes alimentaires. Le Soleil est à l'origine de la plupart des énergies sur Terre, à l'exception de l'énergie nucléaire et de la géothermie profondea.</p>
         <!-- <button class="btn btn-primary btn-lg" type="button">Example button</button> -->
       </div>
     </div>
 	<!-- Carousel wrapper -->
 	<br>
-	<div class="row " style="margin-left:70px;margin-right:auto">
-	<div class="col-sm-12 f- text-center fw-bold">
-		<p>TYPE DE SYSTEME</p>
-		</div>
-		<div class="card mb-3" style="max-width: 550px;">
-			<div class="row g-0">
-				<div class="col-md-4">
-					<img src="/img/1.webp" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+	<div class="container-fluid">
+		<div class="row ">
+			<div class="col-sm-12 f- text-center fw-bold">
+				<p>TYPE DE SYSTEME</p>
 				</div>
-				<div class="col-md-8">
-					<div class="card-body">
-						<h5 class="card-title">Système solaire hybride</h5>
-						<p class="card-text">
-							Un système solaire hybride fonctionne en envoyant de l'énergie solaire à votre onduleur, qui
-							envoie ensuite de l'énergie pour alimenter votre maison . L'énergie supplémentaire qui n'est
-							pas utilisée pour alimenter votre maison est stockée dans votre batterie domestique. Cette
-							batterie peut alimenter votre maison lorsque vos panneaux solaires ne produisent pas
-							d'énergie.
-						</p>
-						<p class="card-text">
-							<small class="text-muted">Lamp kits Solar</small>
-						</p>
+				<div class="card col-sm-6">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="/img/1.webp" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">Système solaire hybride</h5>
+								<p class="card-text">
+									Un système solaire hybride fonctionne en envoyant de l'énergie solaire à votre onduleur, qui
+									envoie ensuite de l'énergie pour alimenter votre maison . L'énergie supplémentaire qui n'est
+									pas utilisée pour alimenter votre maison est stockée dans votre batterie domestique. Cette
+									batterie peut alimenter votre maison lorsque vos panneaux solaires ne produisent pas
+									d'énergie.
+								</p>
+								<p class="card-text">
+									<small class="text-muted">Lamp kits Solar</small>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-		&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<div class="card mb-3" style="max-width: 550px;">
-			<div class="row g-0">
-				<div class="col-md-4">
-					<img src="/img/A6.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+				<div class="card col-sm-6">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="/img/A6.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">Système solaire isolé</h5>
+								<p class="card-text">
+									Un système PV pour site isolé est un générateur électrique autonome. Les sites isolés sont
+									des habitations ou des applications non reliées au réseau électrique. Dans ce cas, le
+									générateur photovoltaïque apporte l`énergie nécessaire à l`alimentation des besoins
+									électriques. Un parc de batteries est nécessaire pour les périodes sans soleil (nuits et
+									jours de pluie).
+		
+		
+								</p>
+								<p class="card-text">
+									<small class="text-muted">Lamp Kits Solar</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					
 				</div>
-				<div class="col-md-8">
-					<div class="card-body">
-						<h5 class="card-title">Système solaire isolé</h5>
-						<p class="card-text">
-							Un système PV pour site isolé est un générateur électrique autonome. Les sites isolés sont
-							des habitations ou des applications non reliées au réseau électrique. Dans ce cas, le
-							générateur photovoltaïque apporte l`énergie nécessaire à l`alimentation des besoins
-							électriques. Un parc de batteries est nécessaire pour les périodes sans soleil (nuits et
-							jours de pluie).
-
-
-						</p>
-						<p class="card-text">
-							<small class="text-muted">Lamp Kits Solar</small>
-						</p>
+				<!-- NOS SERVICES  -->
+			
+			
+				<div class="col-sm-12 container-fluid text-center fw-bold" id="service">
+				<br>
+				<p>NOS SERVICES</p>
+				</div>
+				<div class="row">
+				<div class="card col-sm-6">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="/img/l2.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">GESTION DE DEVIS POUR MAISON</h5>
+								<p class="card-text">
+									Un système solaire hybride fonctionne en envoyant de l'énergie solaire à votre onduleur,
+								</p>
+								<p class="card-text">
+									<small class="text-muted">Lamp kits Solar</small>
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</div>
+				<div class="card col-sm-6" >
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="/img/l2.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">GESTION DE DIMENSIONNEMENT POUR MAISON</h5>
+								<p class="card-text">
+									Un système PV pour site isolé est un générateur électrique autonome.
+								</p>
+								<p class="card-text">
+									<small class="text-muted">Lamp Kits Solar</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			<!-- 	&nbsp;
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<div class="card mb-3" style="max-width: 400px;">
+					<div class="row g-0">
+						<div class="col-md-4">
+							<img src="@{/img/l1.jpg}" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
+						</div>
+						<div class="col-md-8">
+							<div class="card-body">
+								<h5 class="card-title">EQUIPE CONSEILLERES</h5>
+								<p class="card-text">
+									Un système PV pour site isolé est un générateur électrique autonome.
+		
+		
+								</p>
+								<p class="card-text">
+									<small class="text-muted">Lamp Kits Solar</small>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+				</div> -->
+					<!-- Carousel wrapper -->
+		
+				</div>
+		
 			
 		</div>
-		<!-- NOS SERVICES  -->
-	
-	
-		<div class="col-sm-12 container-fluid text-center fw-bold" id="service">
-		<br>
-		<p>NOS SERVICES</p>
-		</div>
-		<div class="row">
-		<div class="card mb-3" style="max-width: 550px">
-			<div class="row g-0">
-				<div class="col-md-4">
-					<img src="/img/l2.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
-				</div>
-				<div class="col-md-8">
-					<div class="card-body">
-						<h5 class="card-title">GESTION DE DEVIS POUR MAISON</h5>
-						<p class="card-text">
-							Un système solaire hybride fonctionne en envoyant de l'énergie solaire à votre onduleur,
-						</p>
-						<p class="card-text">
-							<small class="text-muted">Lamp kits Solar</small>
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<div class="card mb-3" style="max-width: 550px;">
-			<div class="row g-0">
-				<div class="col-md-4">
-					<img src="/img/l2.jpg" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
-				</div>
-				<div class="col-md-8">
-					<div class="card-body">
-						<h5 class="card-title">GESTION DE DIMENSIONNEMENT POUR MAISON</h5>
-						<p class="card-text">
-							Un système PV pour site isolé est un générateur électrique autonome.
-						</p>
-						<p class="card-text">
-							<small class="text-muted">Lamp Kits Solar</small>
-						</p>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	<!-- 	&nbsp;
-		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-		<div class="card mb-3" style="max-width: 400px;">
-			<div class="row g-0">
-				<div class="col-md-4">
-					<img src="@{/img/l1.jpg}" alt="Trendy Pants and Shoes" class="img-fluid rounded-start" />
-				</div>
-				<div class="col-md-8">
-					<div class="card-body">
-						<h5 class="card-title">EQUIPE CONSEILLERES</h5>
-						<p class="card-text">
-							Un système PV pour site isolé est un générateur électrique autonome.
-
-
-						</p>
-						<p class="card-text">
-							<small class="text-muted">Lamp Kits Solar</small>
-						</p>
-					</div>
-				</div>
-			</div>
-			
-		</div> -->
-			<!-- Carousel wrapper -->
-
-		</div>
-
-	
-</div>
+	</div>
 	<div>
     <footer class="text-center text-black container-fluid "
 			style="background:#e4c86d" id="contacts">

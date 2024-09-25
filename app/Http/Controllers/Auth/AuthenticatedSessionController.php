@@ -29,13 +29,24 @@ class AuthenticatedSessionController extends Controller
     public function store(LoginRequest $request)
     {
         $request->authenticate();
-
+        
         
         if(Auth::user()->statut == 0 ){
-            return redirect()->back()->with('statut','ce compte n est pas encore actif' );
-    }
-        $request->session()->regenerate();
-        return redirect()->intended(RouteServiceProvider::HOMES);
+            $request->session()->invalidate();
+            return redirect('/login')->with('statut','ce compte n est pas encore actif' );
+        }else {
+            $request->session()->regenerate();
+            if(Auth::user()->role === 'admin'){
+                // return redirect('/admin');
+                return redirect()->intended(RouteServiceProvider::HOME);
+    
+            }if(Auth::user()->role === 'client'){
+            //   return redirect('/caisse');
+            return redirect()->intended(RouteServiceProvider::CLIENT);
+            }
+           
+            
+        }
     }
 
     /**
